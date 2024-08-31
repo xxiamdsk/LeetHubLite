@@ -70,7 +70,7 @@ def update_readme(submissions):
     template = """
 # LeetCode Submissions
 
-> Auto-generated with [LeetSyncMaster](https://github.com/shubhamwagh/LeetSyncMaster)
+> Auto-generated with [LeetHubLite](https://github.com/shubhamwagh/LeetSyncMaster)
 
 ## Contents
 
