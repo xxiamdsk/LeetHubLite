@@ -1,4 +1,4 @@
-name: "LeetSyncMaster"
+name: "LeetHubLite"
 description: "Automatically collect and organize LeetCode submissions into a GitHub repository"
 branding:
   icon: git-commit
