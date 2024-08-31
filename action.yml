@@ -1,4 +1,4 @@
-name: "LeetHubLite"
+name: "LeetSyncMaster"
 description: "Automatically collect and organize LeetCode submissions into a GitHub repository"
 branding:
   icon: git-commit
@@ -34,7 +34,7 @@ runs:
         pip install requests GitPython
       shell: bash
 
-    - name: Run LeetHubLite
+    - name: Run LeetSyncMaster
       run: python ${{ github.action_path }}/main.py
       shell: bash
       env:

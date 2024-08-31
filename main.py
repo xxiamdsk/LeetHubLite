@@ -70,11 +70,11 @@ def update_readme(submissions):
     template = """
 # LeetCode Submissions
 
-> Auto-generated with [LeetHubLite](https://github.com/xxiamdsk/LeetHubLite)
+> Auto-generated with [LeetSyncMaster](https://github.com/shubhamwagh/LeetSyncMaster)
 
 ## Contents
 
-| Id | Title | Difficulty | Skills |
+| # | Title | Difficulty | Skills |
 |---| ----- | ---------- | ------ |
 """
 
@@ -99,7 +99,7 @@ def sync_github(commits, submissions):
     repo.config_writer().set_value("user", "email", commit.author.email).release()
 
     for submission in submissions:
-        commit_message = f"LeetHubLite - {submission['title']} ({submission['language']})"
+        commit_message = f"LeetSyncMaster - {submission['title']} ({submission['language']})"
         if commit_message not in commits or commits[commit_message] < submission["timestamp"]:
             dir_name = f"{str(submission['id']).zfill(4)}-{submission['title_slug']}"
             language = submission["language"]
@@ -114,10 +114,10 @@ def sync_github(commits, submissions):
             else:
                 raise Exception(f"Unknown language : {submission['language']}")
 
-            pathlib.Path(f"Problems/{dir_name}").mkdir(parents=True, exist_ok=True)
-            with open(f"Problems/{dir_name}/{dir_name}.{ext}", "wt") as fd:
+            pathlib.Path(f"problems/{dir_name}").mkdir(parents=True, exist_ok=True)
+            with open(f"problems/{dir_name}/{dir_name}.{ext}", "wt") as fd:
                 fd.write(submission["code"].strip())
-            with open(f"Problems/{dir_name}/README.md", "wt") as fd:
+            with open(f"problems/{dir_name}/README.md", "wt") as fd:
                 content = f"<h2>{submission['id']}. {submission['title']}</h2>\n\n"
                 if submission["content"] is not None:
                     content += submission["content"].strip()
