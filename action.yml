@@ -34,7 +34,7 @@ runs:
         pip install requests GitPython
       shell: bash
 
-    - name: Run LeetSyncMaster
+    - name: Run LeetHubLite
       run: python ${{ github.action_path }}/main.py
       shell: bash
       env:
