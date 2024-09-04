@@ -51,7 +51,7 @@ We are thrilled to announce the release of LeetSyncLite GitHub Action v1.0! This
          runs-on: ubuntu-latest
          steps:
            - name: Run LeetSyncLite
-             uses: xxiamdsk/LeetSyncLite@v1.0.0
+             uses: xxiamdsk/LeetSyncLite@v1
              with:
                GITHUB_TOKEN: ${{ github.token }}
                LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
