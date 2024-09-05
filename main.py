@@ -2,11 +2,11 @@ import os
 import time
 import json
 import pathlib
-import requests
+import requests # type: ignore
 import datetime
 import email.utils
 import urllib.parse
-from git import Repo
+from git import Repo # type: ignore
 import leetcode_query
 
 
