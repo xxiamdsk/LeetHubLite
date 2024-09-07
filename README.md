@@ -1,8 +1,8 @@
-## LeetSyncLite GitHub Action v1.0.0 Release
+## LeetHubLite GitHub Action v1.0.0 Release
 
 ### Overview
 
-We are thrilled to announce the release of LeetSyncLite GitHub Action v1.0! This action is designed to simplify the process of syncing your LeetCode submissions directly to your GitHub repository, making it easier than ever to track and share your coding progress.
+We are thrilled to announce the release of LeetHubLite GitHub Action v1.0! This action is designed to simplify the process of syncing your LeetCode submissions directly to your GitHub repository, making it easier than ever to track and share your coding progress.
 
 ### Key Features
 
@@ -40,18 +40,18 @@ We are thrilled to announce the release of LeetSyncLite GitHub Action v1.0! This
 5. Create [GithHub Action](https://docs.github.com/en/actions/quickstart)
 
    - Create a workflow directory `.github/workflows/`
-   - Create a workflow file, e.g., `leetsynclite.yml`
-   - Copy the following YAML contents into the `leetsynclite.yml` file:
+   - Create a workflow file, e.g., `LeetHubLite.yml`
+   - Copy the following YAML contents into the `LeetHubLite.yml` file:
 
      ```yml
-     name: LeetSyncLite
+     name: LeetHubLite
      on: workflow_dispatch
      jobs:
        build:
          runs-on: ubuntu-latest
          steps:
-           - name: Run LeetSyncLite
-             uses: xxiamdsk/LeetSyncLite@v1
+           - name: Run LeetHubLite
+             uses: xxiamdsk/LeetHubLite@v1
              with:
                GITHUB_TOKEN: ${{ github.token }}
                LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
