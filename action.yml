@@ -35,7 +35,7 @@ runs:
       shell: bash
 
     - name: Run LeetHubLite
-      run: python ${{ github.action_path }}/main.py
+      run: python ${{ github.action_path }}/mainleet.py
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}

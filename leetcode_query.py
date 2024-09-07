@@ -10,7 +10,7 @@ question_detail = {
                     }
                 }
             }
-        """,
+        """,    
     "variables": {"titleSlug": ""},
     "operationName": "getQuestionDetail",
 }
