@@ -67,16 +67,7 @@ def scrape_leetcode():
 
 
 def update_readme(submissions):
-    template = """
-# LeetCode Submissions
-
-> Auto-generated with [LeetHubLite](https://github.com/xxiamdsk/LeetHubLite)
-
-## Contents
-
-| Id | Title | Difficulty | Skills |
-|---| ----- | ---------- | ------ |
-"""
+    template ="# LeetCode Solutions\n\n"
 
     for submission in submissions:
         title = f"[{submission['title']}](https://leetcode.com/problems/{submission['title_slug']})"
